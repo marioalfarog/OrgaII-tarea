@@ -13,16 +13,22 @@ void print(int n,int m){
 	}
 void puntos(string prev,float& cont,int pasos){
 	if(prev=="*"){
-		cont+=2;
+		cont+=20;
+		}
+	if(prev=="$"){
+		cont+=10;
+		}
+	if(prev=="="){
+		cont+=5;
 		}
 	if(prev=="#"){
-		cont+=1;
+		cont+=2;
 		}
 	if(prev=="@"){
-		cont+=1.5;
+		cont+=1;
 		}
 	if(prev=="S" && pasos==0){
-		cont+=1;
+		cont+=0.5;
 		}
 	
 }
@@ -229,4 +235,5 @@ int main(){
 	}
 return 0;
 }
+
 
